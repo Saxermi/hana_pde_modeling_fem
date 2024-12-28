@@ -45,7 +45,7 @@ def create_coil_geometry(nwindings=6, wireradius=0.001, coilradius=0.01):
 
     geo = OCCGeometry(Glue([coil, air]))
 
-    return geo
+    return geo, crosssection
 
 
 def create_homo_geometry(nwindings=6, wireradius=0.001, coilradius=0.01):
@@ -59,6 +59,7 @@ def create_homo_geometry(nwindings=6, wireradius=0.001, coilradius=0.01):
 
     Returns:
     OCCGeometry: The combined geometry of the coil and the surrounding air region.
+    crosssection: 
     """
     coilheight = nwindings * (2 * wireradius) * 1.2
     airh = 10 * coilradius
@@ -76,6 +77,8 @@ def create_homo_geometry(nwindings=6, wireradius=0.001, coilradius=0.01):
     coil.faces.maxh = wireradius
     coil.solids.name = 'coil'
     coil.name = 'coil'
+    
+    crosssection = coil.faces.Max(Z).mass
 
     # Create the surrounding air box
     box = Box((-airh / 2, -airh / 2, -airh / 2), (airh / 2, airh / 2, airh / 2))
@@ -88,4 +91,4 @@ def create_homo_geometry(nwindings=6, wireradius=0.001, coilradius=0.01):
     # Combine the coil and air region into a single geometry
     geo = OCCGeometry(Glue([coil, air]))
 
-    return geo
+    return geo, crosssection
