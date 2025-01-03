@@ -59,7 +59,7 @@ def create_homo_geometry(nwindings=6, wireradius=0.001, coilradius=0.01):
 
     Returns:
     OCCGeometry: The combined geometry of the coil and the surrounding air region.
-    crosssection: 
+    crosssection: float
     """
     coilheight = nwindings * (2 * wireradius) * 1.2
     airh = 10 * coilradius
@@ -96,16 +96,16 @@ def create_homo_geometry(nwindings=6, wireradius=0.001, coilradius=0.01):
 
 def create_homo_geometry_cube(nwindings=6, wireradius=0.001, coilradius=0.01, center_x=0, center_y=0, center_z=0):
     """
-    Create a homogeneous coil geometry.
-
+    Create a homogeneous geometry coil with a cube visualisation.
     Parameters:
     nwindings (int): Number of windings in the coil. Default is 6.
     wireradius (float): Radius of the wire used in the coil. Default is 0.001.
     coilradius (float): Radius of the coil. Default is 0.01.
-
+    center_x (float): X-coordinate of the center of the cube. Default is 0.
+    center_y (float): Y-coordinate of the center of the cube. Default is 0.
+    center_z (float): Z-coordinate of the center of the cube. Default is 0.
     Returns:
-    OCCGeometry: The combined geometry of the coil and the surrounding air region.
-    crosssection: 
+    tuple: A tuple containing the geometry object and the cross-section mass of the coil.
     """
     coilheight = nwindings * (2 * wireradius) * 1.2
     airh = 10 * coilradius
