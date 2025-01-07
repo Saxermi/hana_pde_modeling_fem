@@ -89,7 +89,7 @@ def create_homo_geometry(nwindings=6, wireradius=0.001, coilradius=0.01):
     air.mat("air")
 
     # Combine the coil and air region into a single geometry
-    geo = OCCGeometry(Glue([coil, air, cube]))
+    geo = OCCGeometry(Glue([coil, air]))
 
     return geo, crosssection
 
