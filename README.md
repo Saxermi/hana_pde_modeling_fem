@@ -10,7 +10,7 @@
 * [Aufgabe 3](meshing.ipynb) - Berechnen der Stromdichte $j_c$ welche durch die Spule fliesst.
 * Aufgabe 4 - Berechnen des magnetische Vektorpotentials A für die beiden Geometrien.
   * [Homogene Geometrie](4_MagVekPot_HomCoil.ipynb)
-  * [Inhomogene Geometrie](4_MagVekPot_InhomCoil.ipynb)
+  * [Inhomogene Geometrie](4_MagVekPot_InHomCoil.ipynb)
 * Aufgabe 5 - Berechnen mit Hilfe des expliziten Runge-Kutta Verfahren 4. Ordnung.
   * [Elektron in z-Richtung](5_RungeKutta_HomCoil.ipynb)
   * [Proton auf Kreisbahn](5_Proton_HomCoil.ipynb)
