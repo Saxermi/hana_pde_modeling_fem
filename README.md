@@ -7,7 +7,7 @@
 
 * Aufgabe 1 - Im paper vorhanden.
 * Aufgabe 2 - Im paper vorhanden.
-* [Aufgabe 3](meshing.ipynb) - Berechnen der Stromdichte $j_c$ welche durch die Spule fliesst.
+* [Aufgabe 3](3_voltage_residual.ipynb) - Berechnen der Stromdichte $j_c$ welche durch die Spule fliesst.
 * Aufgabe 4 - Berechnen des magnetische Vektorpotentials A für die beiden Geometrien.
   * [Homogene Geometrie](4_MagVekPot_HomCoil.ipynb)
   * [Inhomogene Geometrie](4_MagVekPot_InHomCoil.ipynb)
