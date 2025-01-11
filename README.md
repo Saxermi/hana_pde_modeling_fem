@@ -1,4 +1,4 @@
-# - HANA SEP Projekt 10 HS24 -
+# - Höhere Analysis und Numerik SEP Projekt 10 HS24 -
 ## Bewegung eines geladenen Teilchens im Magnetfeld
 
 > Die Repo beinhaltet die notwendige scripts für die Lösung des Projekts 10 der Vorlesung HANA.
